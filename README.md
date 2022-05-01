@@ -32,18 +32,3 @@ alphaSvc.GetString(2); //--> returns "M"
 
 alphaSvc.GetString(8); //--> returns "SS"
 ```
-
-## Release Notes
-
-### 1.1.2
-
-* Included Source Repository in NuGet Package
-* Added License file
-
-### 1.1.1
-
-* Updated README
-
-### 1.1.0
-
-* Initial Release
