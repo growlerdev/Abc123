@@ -1,4 +1,5 @@
 name: $(GITVERSION_SemVer)
+
 trigger:
 - release/*
 - master
@@ -12,11 +13,13 @@ steps:
 - task: NuGetToolInstaller@1
   displayName: 'Use NuGet'
 
-- task: UseGitVersion@5
-  displayName: GitVersion
+- task: gitversion/setup@0
+  displayName: Setup GitVersion
   inputs:
     versionSpec: '5.x'
-    updateAssemblyInfo: true
+
+- task: gitversion/execute@0
+  displayName: Execute GitVersion
 
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
