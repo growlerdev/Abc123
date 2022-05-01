@@ -1,20 +1,49 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Abc123
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+[![NuGet version (iAutomateDesign.AutodeskAppStore)](https://buildstats.info/nuget/Abc123)](https://www.nuget.org/packages/Abc123)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Infinitely correlates an array of characters to a zero based index. When the index exceeds the length of the character array, a prefix is recursively added.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Usage
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The default character array is the English Alphabet.
+
+```csharp
+var alphaSvc = new AlphaNumericService();
+
+alphaSvc.GetString(0); //--> returns "A"
+alphaSvc.GetString(1); //--> returns "B"
+alphaSvc.GetString(2); //--> returns "C"
+
+alphaSvc.GetString(26); //--> returns "AA"
+alphaSvc.GetString(777); //--> returns "ACX"
+```
+
+### Overriding Default Character Array
+
+The character array can be overridden by passing in a string into the `AlphaNumericService` constructor.
+
+```csharp
+var alphaSvc = new AlphaNumericService("SOMETEXT");
+
+alphaSvc.GetString(0); //--> returns "S"
+alphaSvc.GetString(1); //--> returns "O"
+alphaSvc.GetString(2); //--> returns "M"
+
+alphaSvc.GetString(8); //--> returns "SS"
+```
+
+## Release Notes
+
+### 1.1.2
+
+* Included Source Repository in NuGet Package
+* Added License file
+
+### 1.1.1
+
+* Updated README
+
+### 1.1.0
+
+* Initial Release
