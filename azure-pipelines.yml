@@ -12,10 +12,11 @@ steps:
 - task: NuGetToolInstaller@1
   displayName: 'Use NuGet'
 
-- task: GitVersion@5
+- task: UseGitVersion@5
   displayName: GitVersion
   inputs:
-    runtime: 'core'
+    versionSpec: '5.x'
+    updateAssemblyInfo: true
 
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
