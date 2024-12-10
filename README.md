@@ -1,6 +1,10 @@
 # Abc123
 
-[![NuGet version (iAutomateDesign.AutodeskAppStore)](https://buildstats.info/nuget/Abc123)](https://www.nuget.org/packages/Abc123)
+![GitHub Release](https://img.shields.io/github/v/release/growlerdev/abc123?display_name=release&logo=github&label=release&link=https%3A%2F%2Fgithub.com%2Fgrowlerdev%2Fabc123%2Freleases)
+    ![GitHub Release](https://img.shields.io/github/v/release/growlerdev/abc123?include_prereleases&display_name=release&logo=github&label=latest%20build&link=https%3A%2F%2Fgithub.com%2Fgrowlerdev%2Fabc123%2Freleases)
+    ![NuGet Downloads](https://img.shields.io/nuget/dt/abc123?logo=nuget&color=9932CC)
+    ![GitHub License](https://img.shields.io/github/license/growlerdev/abc123?color=salmon)
+    ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/growlerdev/abc123/main.yml?logo=githubactions&logoColor=white&label=Build%20and%20Deploy&link=https%3A%2F%2Fgithub.com%2Fgrowlerdev%2Fabc123%2Factions%2Fworkflows%2Fbuild-deploy.yml)
 
 Infinitely correlates an array of characters to a zero based index. When the index exceeds the length of the character array, a prefix is recursively added.
 
